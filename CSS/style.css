@@ -1,0 +1,446 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.btn-read a {
+    background: #00c853;
+    padding: 13px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px;
+}
+h2 {
+    font-size: 30px;
+    border-bottom: 2px solid #3b3636;
+    width: 240px;
+    margin: auto;
+}
+/* Navbar*/
+nav {
+    display: flex;
+    background: #263238;
+    justify-content: space-between;
+    padding: 13px;
+    width: 100%;
+    box-shadow: 1px 3px 2px gray;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section input {
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 140px;
+    width: 240px;
+}
+input {
+    border: none;
+}
+.fa-shopping-cart {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    margin-left: 280px;
+}
+.fa-user {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    margin-left: 170px;
+}
+.fa-shopping-cart{
+    margin-right: 60px;
+}
+.fa-search {
+    position: absolute;
+    margin-left: 60px;
+    z-index: 2;
+    text-decoration: none;
+}
+.fa-bars {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 5px;
+}
+nav ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    padding: 10px;
+}
+ul a:hover {
+    color: orangered;
+}
+
+.fa-shopping-cart:hover {
+    color: orangered;
+}
+.fa-bars:hover {
+    color: orangered;
+}
+.fa-user:hover{
+    color: orangered;
+}
+.fa-search:hover{
+    color: orangered;
+}
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 20px;
+}
+/* banner*/
+.banner {
+    background-position:center;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.6)), url(../images/bg-img.1.png);
+}
+.banner h1 {
+    border-radius: 2px 1000px;
+    box-shadow: 3px 20px 55px orange;
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 600px;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+b {
+    color: #ff8f00;
+}
+span{
+    color: #2e7d32;
+}
+.button {
+    display: flex;
+}
+.button a {
+    background: orange;
+    padding: 22px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 0px 30px;
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 18px;
+    width: 12%;
+    z-index: 1;
+}
+/* <------display----> */
+.road p {
+    font-size: 20px;
+    margin-top: 55px;
+}
+.road {
+    height: 10px;
+    position: absolute;
+    top: 480px;
+    background-position: bottom 5rem;
+    background-size: 10%;
+    background-repeat: repeat-x;
+    margin-left: 199px;
+    animation: road 10s linear infinite,
+                move 2s linear infinite;
+}
+
+@keyframes road {
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(1536px);
+    }
+}
+.bottom {
+    border-bottom: 1px solid;
+    margin-top: 77px;
+    position: relative;
+}
+.btn a:hover {
+    color: orangered;
+    background: #1b5e20;
+    border-bottom: 4px solid;
+}
+.fa-bars, .fa-search, .fa-user, .fa-shopping-cart {
+    cursor: pointer;
+}
+/* title */
+.title {
+    color: #3b3636;
+    text-align: center;
+}
+/* container */
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.col {
+    width: 465px;
+    border-radius: 8px;
+    height: 55vh;
+}
+
+.card {
+    background: #e0f2f1;
+    border: 1px solid;
+    height: 55vh;
+    border: none;
+    border-radius: 8px 50px;
+}
+.card  {
+    border-bottom: 8px solid orange;
+    border-right: 4px solid orange ;
+}
+
+.card:hover {
+    box-shadow: 1px 5px 10px #263238;
+    height: 56vh;
+    width: 101%;
+}
+.card-hover:hover {
+    box-shadow: 0px 5px 10px #263238;
+    height: 48vh;
+    width: 100%;
+}
+.card-hover {
+    height: 47vh;
+}
+.fa-star, .fa-star-half-empty{
+    margin-left: 5px;
+    color: #ff8f00;
+}
+.card-footer {
+    padding: 4px;
+    text-align: center;
+    background: #c8e6c9;
+    border-radius: 10px;
+}
+.card-body {
+    display: flex;
+    justify-content: center;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.col3 {
+    width: 23%;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.btn .contact {
+    border: none;
+    background: #00c853;
+    padding: 13px;
+    border-radius: 8px;
+}
+.btn .buy-now  {
+    border: none;
+    background: #00c853;
+    padding: 13px;
+    border-radius: 8px;
+}
+.btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+.btn .fa-long-arrow-left, .btn .fa-long-arrow-right {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containers {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.cols {
+    width: 342px;
+   margin-top: 10px;
+}
+.border-bottom {
+    margin-top: 20px;
+}
+.border-bottom a:hover {
+    color: orangered;
+    background:#1b5e20;
+    border-bottom: 4px solid;
+}
+.border-bottom a {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background: #00c853;
+    width: 96px;
+    padding: 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* <---footer---> */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #2e7d32;
+    margin-top: 10px;
+
+}
+.social-icon {
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 50px;
+}
+h3 {
+    color: #fff;
+}
+.photos p {
+    color: #fff;
+    margin-right: 50px;
+}
+ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 2;
+}
+ul {
+    color: #fff;
+    font-size: 20px;
+}
+.pagraph h3  {
+    margin-right: 100px;
+}
+.pagraph p {
+    color: #fff;
+    font-size: 18px;
+}
+.fa-phone {
+    font-size: 20px;
+    color: #fff;
+}
+.fa-handshake-o {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* <--------content index-----> */
+.bt {
+    margin-top: 35px;
+}
+.border-bottom a {
+    border-radius: 8px;
+}
+.card1 {
+    height: 55vh;
+}
+.card1:hover {
+    box-shadow: 0px 5px 10px #263238;
+    height: 58vh;
+    width: 100%;
+}
+
+/* <-------services------> */
+.body-form {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top,rgba(54, 37, 14, 0.5),40%,rgba(28, 121, 5, 0.5)50%), url(picture.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.form-container {
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(12, 9, 9);
+    opacity: 0.5;
+
+}
+
+.form-group input {
+    padding: 15px;
+    border-radius: 5px;
+}
+.form-group {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+}
+.form-control:focus {
+    border-bottom: 3px solid rgb(216, 125, 39);
+}
+.title {
+    margin-top: 50px;
+}
+.title  h1 {
+    text-align: center;
+    color: orangered;
+}
+button {
+    padding: 12px 15px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    background:#558b2f;
+    border-radius: 15px;
+
+}
+btn-center {
+    text-align: center;
+}
+textarea {
+    resize: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid gray;
+    width: 500px;
+}
